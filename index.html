@@ -284,13 +284,15 @@
   /* ---------- About page ---------- */
   .about-story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
   .founder-badge{
-    width:100%;aspect-ratio:1/0.85;background:linear-gradient(150deg,var(--navy-900),var(--navy-700));
-    border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--white);
-    position:relative;overflow:hidden;
+    width:100%;aspect-ratio:1/0.85;
+    background-image:url("allinfounder.jpg");
+    background-size:cover;background-position:center 20%;
+    border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;color:var(--white);
+    position:relative;overflow:hidden;padding-bottom:24px;
   }
-  .founder-badge::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 300px 200px at 80% 90%, rgba(34,211,238,0.25),transparent 60%);}
-  .founder-badge .initials{font-family:'Anton',sans-serif;font-size:54px;color:var(--cyan-300);position:relative;z-index:1;}
-  .founder-badge .tag{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate-300);margin-top:10px;position:relative;z-index:1;}
+  .founder-badge::before{content:'';position:absolute;inset:0;background:linear-gradient(to top, rgba(5,14,34,0.92) 0%, rgba(5,14,34,0.55) 35%, rgba(5,14,34,0.05) 65%, transparent 80%);}
+  .founder-badge .founder-name{font-family:'Anton',sans-serif;font-size:26px;color:var(--white);position:relative;z-index:1;text-align:center;}
+  .founder-badge .tag{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--slate-300);margin-top:8px;position:relative;z-index:1;text-align:center;}
   .about-story p{color:var(--slate-700);font-size:16px;margin-bottom:16px;}
 
   .values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
@@ -593,8 +595,7 @@
     <div class="wrap">
       <div class="about-story">
         <div class="founder-badge">
-          <div class="initials display">YourPhotoHere</div>
-          <div class="founder-name display" style="font-size:20px;margin-top:10px;">Anthony Mortillaro</div>
+          <div class="founder-name display">Anthony Mortillaro</div>
           <div class="tag mono">Founder &middot; U.S. Armed Forces Veteran</div>
         </div>
         <div>
